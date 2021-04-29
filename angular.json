@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "sample-ng-challenge"
+  "defaultProject": "sample-ng-challenge",
+  "cli": {
+    "analytics": "ab759c13-dbe9-42eb-b076-dbcd2f150564"
+  }
 }
