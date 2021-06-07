@@ -1,3 +1,14 @@
-<div class="counter-list">
-    <app-counter></app-counter>
+<div class="row">
+
+    <app-counter class="col-md-3"  *ngFor="let counter of counters; index as i;"
+    (incrementCounterClicked)="onIncrementClicked($event)"
+    (removeCounterClicked)="onRemoveCounterClicked($event)"
+    [index]="i">
+</app-counter>
 </div>
+ 
+       
+       
+   
+   
+   

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-counter-totals',
@@ -8,8 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class CounterTotalsComponent implements OnInit {
 
   constructor() { }
+  @Input() total:number=0;
+  @Output() addCounterClicked = new EventEmitter<boolean>();
 
   ngOnInit(): void {
+  }
+
+  addCounter()
+  {
+     this.addCounterClicked.emit(true);
   }
 
 }

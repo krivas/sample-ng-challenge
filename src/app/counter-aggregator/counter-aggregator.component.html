@@ -1,4 +1,12 @@
-<div class="container">
-    <app-counter-totals></app-counter-totals>
-    <app-counter-list></app-counter-list>
+<div class="container-fluid">
+     
+    <app-counter-totals 
+        [total]="total"
+        (addCounterClicked)="onAddCounterClicked($event)"
+      ></app-counter-totals>
+
+    <app-counter-list
+    (incrementCounterClicked)="onIncrementClicked($event)"
+    (removeCounterClicked)="onRemoveCounterClicked($event)"
+  ></app-counter-list>
 </div>
